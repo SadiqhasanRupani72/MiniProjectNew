@@ -107,7 +107,7 @@
 
       function create_tbl()
       {
-        $servername = "localhost:3303";
+        $servername = "localhost";
         $username = "root";
         $password = "";
         $dbname = "vpimsr_db";
@@ -195,9 +195,6 @@
         } else {
           echo "Error creating table: " . mysqli_error($conn);
         }
-
-
-
         mysqli_close($conn);
       }
 
